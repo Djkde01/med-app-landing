@@ -1,0 +1,32 @@
+.main-help {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  & h1 {
+    width: 20vw;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+  & .help-content-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 32px auto;
+    padding-right: 80px;
+
+    & h1 {
+      font-size: 40px;
+      color: rgba(109, 18, 14, 1);
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 32px;
+    }
+    & span h3 {
+      margin-bottom: 16px;
+    }
+  }
+}

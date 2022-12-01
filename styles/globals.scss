@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-landing {
+  position: relative;
+  height: 80vh;
+  padding: 100px 80px;
+  & h1 {
+    font-size: 80px;
+    width: 50vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+  & svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  & .main-button {
+    text-transform: uppercase;
+    background: linear-gradient(
+      90deg,
+      rgba(56, 12, 15, 1) 0%,
+      rgba(109, 18, 14, 1) 100%
+    );
+    color: white;
+    text-decoration: none;
+    padding: 24px 90px;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+}
+
+@import "./components/Header.module.scss";
+@import "./Case.module.scss";
+@import "./Help.module.scss";
